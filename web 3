@@ -1,0 +1,16 @@
+// Many web3.js methods return promises.
+web3.eth.getBlock("latest").then(block => {
+  /* … */
+});
+
+web3.eth
+  .estimateGas({
+    from: "0xge61df…",
+    to: "0x087a5c…",
+    data: "0xa9059c…",
+    gasPrice: "0xa994f8…",
+  })
+  .then(gasAmount => {
+    /* … */
+  });
+ 
